@@ -7,21 +7,21 @@ module.exports = {
     connection: {
       filename: './src/database/db.sqlite'
     },
-  
+
     migrations: {
       directory: './src/database/migrations'
 
     },
 
-    useNullAsDefault: true, 
-  
+    useNullAsDefault: true,
+
   },
 
   staging: {
     client: 'postgresql',
     connection: {
       database: 'my_db',
-      user:     'username',
+      user: 'username',
       password: 'password'
     },
     pool: {
@@ -37,7 +37,7 @@ module.exports = {
     client: 'postgresql',
     connection: {
       database: 'my_db',
-      user:     'username',
+      user: 'username',
       password: 'password'
     },
     pool: {
