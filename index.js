@@ -3,6 +3,8 @@ const express = require('express');
 
 const app = express(); 
 
+app.use(express.json()); 
+
 /*
 >>>>>>>>>>>>>>>Métodos HTTP<<<<<<<<<<<<<<<
 GET:      Buscar um informação do Back-end 
