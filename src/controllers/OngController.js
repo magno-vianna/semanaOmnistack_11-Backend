@@ -6,8 +6,7 @@ module.exports = {
         const ongs = await connection('ongs').select('*');
 
         return Response.json(ongs);
-
-
+        
     },
 
 
