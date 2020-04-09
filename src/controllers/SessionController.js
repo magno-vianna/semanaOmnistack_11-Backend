@@ -1,11 +1,13 @@
+
 const connection = require('../database/connection');
 
 module.exports = {
     async create(Request, Response){
+        console.log(Request.body);
         const { id } = Request.body;
-
+        
         const ong = await connection('ongs')
-            .where('id', id)
+        .where('id', id)
             .select('name')
             .first(); 
 
@@ -16,4 +18,4 @@ module.exports = {
       
     }   
 
-}
+} 

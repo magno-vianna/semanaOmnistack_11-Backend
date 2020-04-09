@@ -19,4 +19,4 @@ routes.get('/profile', ProfileController.index);
 
 routes.post('/sessions', SessionController.create); 
 
-module.exports = routes;        
+module.exports = routes;            
